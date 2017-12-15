@@ -13,7 +13,12 @@
 % save typing for the red text colouring
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 % This abstracts the insertion of the Gresely source page numbers
-\newcommand{\srcpg}[1]{(start #1)}
+\newcommand{\srcpg}[1]{
+    \noindent{
+        \color{Gray}{\rule[0.5ex]{\linewidth}{1pt}~#1} 
+        \\
+    }
+}
 % (Not) End of Gresely specific preable additions
 
 \usepackage[nochapters]{classicthesis} % For some font and style options
@@ -93,7 +98,7 @@ the last od{[}er{]} iij {[}con{]}tr{[}ar{]}y hym þe m{[}e{]}dill \\
 retrett þe same tyme; \red{t}hen the \\
 First and þe last iij bake and þ[e] \\
 medill iij furth and mett All \\ 
-togeder; \red{t}hen iiJ forth w{[}it{]} halfe \\ 
+togeder; \red{t}hen iij forth w{[}it{]} halfe \\ 
 A torne; \red{t}hen þe last iij singlis \\ 
 outhwartt the first {[}con{]}tr{[}ar{]}y hym \\ 
 the medill retrett þe same ty[me]; \\ 
@@ -132,56 +137,90 @@ Flowr de lice whith iij retrette; \\
 torne
 
 \subsection{Bugill}
-\marginnote{Bugill de 3us}After the end of the t{[}ra{]}ce ev{[}er{]}y ma{[}n{]} toged{[}er{]} two
-doblis þan þe first and þe last fourth right the medill
-{[}con{]}t{[}ra{]}ry \marginnote{Whith t{[}ra{]}ce}hy{[}m{]} and torne face to face met in to a
-t{[}ri{]}angle wyse; \red{t}hen all toged{[}er{]} iv singlis compass; \red{t}hen þe
-last ma{[}n{]} \marginnote{3}throth whill þe oder two {[}con{]}ter hym; \red{t}hen all ronde
-iv singlis then come all toged{[}er{]} and \marginnote{3}dep{[}ar{]}t w{[}it{]} a torn
-the d{[}er{]} þay come fro{[}m{]}; \red{t}hen the medill throth while þe first
-\& the last chance place then met \marginnote{4}all togedere; \red{t}hen e{[}ve{]}ry
-ma{[}n{]} \srcpg{59} from od{[}er{]} retrett iij; \red{t}hen torn all at onys
-than all at onys trett \& \marginnote{1}ret{[}re{]}tt then þe medill tourney þe first
-aboute and leve hym on his left hand whill þe last torne in his
-awn{[}e{]} place;
+\marginnote{Bugill de 3us}After the end of the t{[}ra{]}ce\\
+ev{[}er{]}y ma{[}n{]} toged{[}er{]} two doblis þan \\
+þe first and þe last fourth right \\
+the medill {[}con{]}t{[}ra{]}ry \marginnote{Whith t{[}ra{]}ce}hy{[}m{]} and torne \\
+face to face met in to a t{[}ri{]}angle \\
+wyse; \red{t}hen all toged{[}er{]} iv singlis \\
+compass; \red{t}hen þe last ma{[}n{]} \marginnote{3}throth \\
+whill þe oder two {[}con{]}ter hym; \red{t}hen \\
+all ronde iv singlis then come \\
+all toged{[}er{]} and \marginnote{3}dep{[}ar{]}t w{[}it{]} A torn\\
+the d{[}er{]} þay come fro{[}m{]}; \red{t}hen the \\
+medill throth while þe first \& \\
+the last chance place then \\
+met \marginnote{4}All togedere; \red{t}hen e{[}ve{]}ry ma{[}n{]} \srcpg{59} 
+From od{[}er{]} retrett iij; \red{t}hen torn All\\
+at onys than all at onys trett \& \marginnote{1}ret{[}re{]}tt\\
+then þe medill tourney þe first\\
+aboute and leve hym on his left\\
+hand whill þe last torne in his\\
+Awn{[}e{]} place;
 
 \subsection{Prenes a Gard}
-\marginnote{P{[}re{]}nes a gard de trib{[}us{]}}Af{[}er{]} the end of the tr{[}ac{]}e the first ma{[}n{]} lepe þe secnd
-lepe the iij thred torne; \red{t}hen the last lepe þe secnd lepe þe first
-torne the first lepe þe last lepe þe \marginnote{A doble tr{[}ac{]}e}medill torne; \red{t}hen þe the medill
-forth iij singlis w{[}t{]} halfe a torne whill þe first and the last
-\marginnote{3}retrett; \red{t}hen the first torne þ{[}e{]} last lepe; \red{t}hen þe me-dill
-ma{[}n{]} throth whill þe first \& the last change place\marginnote{1} and the medill
-to his place agayn; \red{t}hen the first t{[}or{]}ne retrett \& rake \srcpg{60}\marginnote{3}
-whill þe 2{[}d{]} t{[}or{]}ne rake and retrett and þ{[}e{]} third retret
-rake \& torne then al at onys a flour dilice \& com to-geders;
+\marginnote{P{[}re{]}nes a gard de trib{[}us{]}}Af{[}er{]} the end of the\\
+tr{[}ac{]}e the first ma{[}n{]} lepe þe secnd\\
+lepe the iij thred torne; \red{t}hen\\
+the last lepe þe secnd lepe þe\\
+first torne the first lepe þe last\\
+lepe þe \marginnote{A doble tr{[}ac{]}e}medill torne; \red{t}hen þe\\ 
+the medill forth iij singlis w{[}t{]}\\
+halfe a torne whill þe first and the\\
+last \marginnote{3}retrett; \red{t}hen the first\\
+torne þ{[}e{]} last lepe; \red{t}hen þe me-\\
+dill ma{[}n{]} throth whill þe first \&\\
+the last change place\marginnote{1} and the\\
+medill to his place Agayn; \red{t}hen\\
+the first t{[}or{]}ne retrett \& rake\\
+\srcpg{60}\marginnote{3} whill \^{} \textsuperscript{þe 2{[}d{]}} t{[}or{]}ne rake and retrett and þ{[}e{]}\\
+third retret rake \& torne then Al\\
+at onys a flour dilice \& com to-\\
+geders;
 
 \subsection{Pernes on Gre}
-\marginnote{Pernes on gre de 2{[}o{]}bs}Trace forth right vj singlis ather torne oy{[}er{]} aboute \& forth right
-vj singlis ayen; aft{[}er{]} the end of þe trace rak \marginnote{The t{[}ra{]}ce}both to-ged{[}er{]}
-and torne; \red{t}hen face to face vj singlis \marginnote{3} ethir {[}con{]}t{[}ra{]}ry
-od{[}er{]} and iij retrette ayen; \red{t}hen a\marginnote{4} flowr delice of both at onys;
-\red{t}hen change place and torne face to face; \red{t}hen a flowr delice and come
-\marginnote{1}toged{[}er{]};
+\marginnote{Pernes on gre de 2{[}o{]}bs}Trace forth right vj\\
+singlis ather torne oy{[}er{]} aboute \&\\
+forth right vj singlis ayen; Aft{[}er{]}\\
+the end of þe trace rak \marginnote{The t{[}ra{]}ce}both to-\\
+ged{[}er{]} and torne; \red{t}hen face to face\\
+vj singlis \marginnote{3} ethir {[}con{]}t{[}ra{]}ry od{[}er{]} and iij\\
+retrette Ayen; \red{t}hen A\marginnote{4} flowr deli\\
+of both at onys; \red{t}hen change place\\
+and torne face to face; \red{t}hen A flowr\\
+delice and come \marginnote{1}toged{[}er{]};
 
 \subsection{Princitore}
-\marginnote{Princitore}After þe end of þe trace a longe torne both at onys; \red{t}hen þe first
-\marginnote{De duob{[}us{]}}ma{[}n{]} iij forth and þe od{[}er{]} iij bak and then loke ov{[}er{]}
-\marginnote{Whith t{[}ra{]}ce}þe shuldyr the secnd ma{[}n{]} þe same whill þe first ma{[}n{]}
-followith hyme in the same forme w{[}t{]} obeysaunce at þe last end thus
-\srcpg{61} doo thre tymes and at þe thred ty{[}m{]}\marginnote{3} both retrett then
-ether pase odyr two tymes \& torne; then ether come to od{[}er{]}; \red{t}hen
-the last ma{[}n{]} trett retrett and torne;
+\marginnote{Princitore}After þe\\
+end of þe trace A longe torne both\\
+at onys; \red{t}hen þe first \marginnote{De duob{[}us{]}}ma{[}n{]} iij forth\\
+and þe od{[}er{]} iij bak and then loke\\
+ov{[}er{]} \marginnote{Whith t{[}ra{]}ce}þe shuldyr the secnd ma{[}n{]} þe\\
+same whill þe first ma{[}n{]} followith\\
+hyme in the same forme w{[}t{]}\\
+obeysaunce at þe last end thus \srcpg{61}
+doo thre tymes and at þe thred ty{[}m{]}\marginnote{3}\\
+both retrett then ether pase odyr\\
+two tymes \& torne; then ether\\
+come to od{[}er{]}; \red{t}hen the last ma{[}n{]} trett\\
+retrett and torne;
 
 \subsection{Armyn}
-\marginnote{Armyn de 3{[}bus{]}}After the end of þe trace the last iij bak þe med-lis od{[}er{]} iij bak
-\marginnote{A doble t{[}ra{]}ce}the first od{[}er{]} iij bake \red{t}hen þe first meve þe secnd half torne þe
-secnd move \& þe last half torne the last move \marginnote{3}and þ{[}e{]} first halfe
-torne; \red{t}hen þe last vi singlis \marginnote{2}forth þe meddist as many to hym; \red{t}hen þe
-first trett retret \marginnote{1}and torne as he standith \red{t}hen brawle al at onys on
-way \& ayen\marginnote{3} the od{[}er{]} way; \red{t}hen ev{[}er{]}y ma{[}n{]} at onys change
-place;\marginnote{2} \red{t}hen þe last man thruth w{[}t{]} a torne whill þe first torne the
-secnd a bought
+\marginnote{Armyn de 3{[}bus{]}}After the end\\
+of þe trace the last iij bak þe med-\\
+lis od{[}er{]} iij bak \marginnote{A doble t{[}ra{]}ce}the first od{[}er{]} iij bake\\
+\red{t}hen þe first meve þe secnd half\\
+torne þe secnd move \& þe last\\
+half torne the last move \marginnote{3}and þ{[}e{]}\\
+first halfe torne; \red{t}hen þe last\\
+vi singlis \marginnote{2}forth þe meddist as\\
+many to hym; \red{t}hen þe first trett\\
+retret \marginnote{1}and torne as he standith\\
+\red{t}hen brawle al at onys on way \&\\
+ayen\marginnote{3} the od{[}er{]} way; \red{t}hen ev{[}er{]}y ma{[}n{]} at\\
+onys change place;\marginnote{2} \red{t}hen þe last\\
+man thruth w{[}t{]} A torne whill þe\\
+first torne the secnd A bought
 
 \subsection{Whatsoever You Will}
 \marginnote{What so eu{[}er{]} y wyll de 2 b{[}us{]}}Afrer the end of the t{[}ra{]}ce trett \srcpg{62} And retrett to geders
