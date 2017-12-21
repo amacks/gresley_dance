@@ -14,28 +14,25 @@
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 % This abstracts the insertion of the Gresely source page numbers
 \newcommand{
-\srcpg}[1]{\noindent{\hspace{-1.85in}\color{Gray}{\rule[0.5ex]{6.0in}{1pt}~#1}}
+\srcpg}[1]{\noindent{\hspace{-1.85in}\color{Gray}{\rule[0.5ex]{6.0in}{1pt}~#1}}\\
 }
 % oriented margin notes
 \newcommand{\tmn}[1]{% Text Margin Note
 \reversemarginpar\marginparsep=11mm{\marginnote{#1}}
-}
-\newcommand{\tmnr}[1]{% Text Margin Note Right
-\normalmarginpar\marginparsep=3mm{\marginnote{#1}}
 }
 \newcommand{\nmn}[1]{% Numeric Margin Note
 \reversemarginpar\marginparsep=3mm\marginnote{#1}
 }
 % (Not) End of Gresely specific preable additions
 
-\usepackage[nochapters]{classicthesis} % For some font and style options
+\usepackage[nochapters,dottedtoc]{classicthesis} % For some font and style options
 \RequirePackage[letterpaper, top=1in, bottom=1.5in, 
   left=1.5in, right=1.5in,showframe=false]{geometry}
 
 %More Gresely Formatting
 \marginparwidth=1.5in
-\oddsidemargin=1.75in
-\textwidth=3.5in
+\oddsidemargin=0in
+\textwidth=6.5in
 
 \begin{document}
     \title{\rmfamily\normalfont\spacedallcaps{the gresley manuscript}}
@@ -47,11 +44,13 @@
     \begin{abstract}
         \noindent\lipsum[1] Just a test.\footnote{This is a footnote.}
     \end{abstract}
-       
     \tableofcontents
 \newpage
 
     \section{Dances}
+    \textwidth=3.5in
+    \oddsidemargin=1.75in
+
     %\finalVersionString 
     \reversemarginpar
 %    \raggedright
