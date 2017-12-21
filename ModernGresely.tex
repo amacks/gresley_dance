@@ -14,14 +14,17 @@
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 % This abstracts the insertion of the Gresely source page numbers
 \newcommand{
-\srcpg}[1]{\noindent{\hspace{-0.65in}\color{Gray}{\rule[0.5ex]{6.0in}{1pt}~#1}}
+\srcpg}[1]{\noindent{\hspace{-1.85in}\color{Gray}{\rule[0.5ex]{6.0in}{1pt}~#1}}
 }
 % oriented margin notes
 \newcommand{\tmn}[1]{% Text Margin Note
-\normalmarginpar\marginnote{#1}
+\reversemarginpar\marginparsep=11mm{\marginnote{#1}}
+}
+\newcommand{\tmnr}[1]{% Text Margin Note Right
+\normalmarginpar\marginparsep=3mm{\marginnote{#1}}
 }
 \newcommand{\nmn}[1]{% Numeric Margin Note
-\reversemarginpar\marginnote{#1}
+\reversemarginpar\marginparsep=3mm\marginnote{#1}
 }
 % (Not) End of Gresely specific preable additions
 
@@ -31,7 +34,7 @@
 
 %More Gresely Formatting
 \marginparwidth=1.5in
-\oddsidemargin=1.5in
+\oddsidemargin=1.75in
 \textwidth=3.5in
 
 \begin{document}
@@ -53,8 +56,8 @@
     \reversemarginpar
 %    \raggedright
     \subsection{Esperans} \raggedright 
-\srcpg{54}    
-\tmn{Esp{[}er{]}ans de 3{[}bus{]}} Al the vj si{[}n{]}glis w{[}ith{]} a trett; þen þe \\* 
+\srcpg{54}
+\tmn{Esp{[}er{]}ans de 3{[}bus{]}}Al the vj si{[}n{]}glis w{[}ith{]} a trett; þen þe \\* 
 fyrst man goo compas till he \\ 
 \tmn{Trace}come behend whil þe medyll \\ 
 retrett thre and þe last iij singlis \\ 
@@ -245,7 +248,7 @@ first torne the secn{[}o{]}d A bought
 \ \\
 \srcpg{62}
 \tmn{Doble t{[}ra{]}ce}\ \\
-\nmn{2}And retrett to geders and thre for-\\
+\nmn{2}\red{A}nd retrett to geders and thre for-\\
 th forth w{[}ith{]} A step; \red{t}hen trett \& retrett\\
 \nmn{1}to geder and both torne at onys;\\
 \red{t}hen both forth to ged{[}er{]} w{[}ith{]} vi sing=\\
@@ -261,7 +264,7 @@ after od{[}er{]}; \red{t}hen þe doble trace Agayn\\
 \tmn{Doble t{[}ra{]}ce}then torne all at onys
 
 \subsection{Tamrett}
-\tmn{Ta{[}m{]}rett\\ De doubus}After\\
+\tmn{Ta{[}m{]}rett\\ De doubus}\red{A}fter\\
 \nmn{2}the end of the trace trett \& retret\\
 and iij forth to ged{[}er{]}; \red{t}hen trett\\
 \& retrett and iij bake then ethir\\
@@ -283,13 +286,13 @@ from \^{}odir iij singlis; \red{t}hen come toged{[}er{]}\\
 \nmn{1}and mak a hertt Ayen
 
 \subsection{Sofferance}
-\tmn{Sofferance\\ de duob{[}us{]}}After\\
+\tmn{Sofferance\\ de duob{[}us{]}}\red{A}fter\\
 the end of þe trace the first iij\\
 \nmn{3} forth and torne whyll þe last \\
 \tmn{A doble t{[}ra{]}ce}retrett; \red{t}hen the last forth \&\\ 
 torne whyll þe first retrett\\
 and then both retrett ethir\\
-\nmn{2}From od{[}er{]}; \red{t}hen the first a flowr\\
+\nmn{2}From od{[}er{]}; \red{t}hen the first A flowr\\
 delice the sec{[}o{]}nd Anothir; \red{t}hen\\
 \nmn{3}ethir {[}con{]}tr{[}a{]}ry other iij singlis on þ{[}e{]}\\
 left syd \red{a}nd then come to ged{[}er{]}\\
@@ -298,7 +301,7 @@ left syd \red{a}nd then come to ged{[}er{]}\\
 \subsection{Lybens}
 \tmn{Lebens di\\ {[}{]}nens de 2{[}bus{]}}
 \nmn{a\textsuperscript{n}}After the end of þe t{[}ra{]}ce the\\
-first iij forth and torne\footnote{Corrected in the bottom margin} whill the \\
+first iij forth and torne\footnote{Added in the bottom margin} whill the \\
 \srcpg{64}
 \red{S}ec{[}o{]}nd retrett iij bake then com to\\
 ged{[}er{]} and ethir torne into oders\\
@@ -319,14 +322,14 @@ retrett; \red{t}hen trett and retrett\\
 obeysawnce; \red{t}hen torn bessily\\
 to þ{[}r{]} Awn place Ayen; \red{t}hen e{[}ver{]}\\
 {[}con{]}t{[}ra{]}ry other iij singlis and iij bak\\
-\nmn{1}ayen; \red{t}hen A flowre delice and\\
+\nmn{1}Ayen; \red{t}hen A flowre delice and\\
 torne
 
 \subsection{Eglamore}
 \tmn{Eglamowr\\ de trib{[}us{]}}After the end of the tr{[}ace{]} 
 \\ \ \\
 \srcpg{65}
-The first thre forth þe \tmn{Double t{[}ra{]}}sec{[}o{]}nd þe\\
+\red{T}he first thre forth þe \tmn{Double t{[}ra{]}}sec{[}o{]}nd þe\\
 \nmn{3}same the 3\textsuperscript{d} the same; \red{t}hen the\\
 first ma{[}n{]} outward on the left\\
 shulder and goo behend þe 2\textsuperscript{d}\\
@@ -335,41 +338,41 @@ the first out þe 2\textsuperscript{d} out þe 3\textsuperscript{d} out
 
 \subsection{New Year}
 \tmn{New yer\\ de t{[}ri{]}b{[}us{]}}
-\nmn{3\textsuperscript{a}}After the end of the t{[}ra{]}ce þe firste\\
+\nmn{3\textsuperscript{a}}\red{A}fter the end of the t{[}ra{]}ce þe firste\\
 ma{[}n{]} iij forth the 2\textsuperscript{d} þe same þe  3\textsuperscript{d}\\
-\nmn{3}the same; \red{t}hen al togeder halfe\\
+\nmn{3}the same; \red{t}hen Al togeder halfe\\
  \tmn{A doble tr{[}ac{]}e} torne thre tymes; \red{t}hen the last\\
 \nmn{3}thre forth the sec{[}o{]}nd the same þe\\
 3\textsuperscript{d} þe same; \red{a}nd then al togedeer\\
 \nmn{3}half torne\footnote{Marginal 3 could apply to either this dance or the next}
 
 \subsection{Roye}
-\tmn{Roye de 3 b{[}us{]}}After the end of þ{[}e{]}\\
+\tmn{Roye de 3 b{[}us{]}}\red{A}fter the end of þ{[}e{]}\\
 trace the first man thre furth\\
 \tmn{A doble t{[}ra{]}ce\\ \& iij bak i{[}n{]} þ{[}e{]} en{[}d{]}}the sec{[}o{]}nd the same þe iij the sam\\
-then al rak togeders forth; \red{t}hen\\
-bak rak Ayen and all torn toged\\
+\red{t}hen Al rak togeders forth; \red{t}hen\\
+bak rak Ayen and All torn toged\\
 \red{t}hen the first man move þen þe\\
 sec{[}o{]}nd and\nmn{3} þe 3\textsuperscript{d} move \& þe first ma{[}n{]} \\
 \srcpg{66}
 \nmn{2} torne Abought; \red{t}hen þe sec{[}o{]}nd ma{[}n{]}\\
 me{[}v{]}e; the first and þe \nmn{3}last meve\\
-toged{[}er{]} \& the 2\textsuperscript{d} t{[}or{]}ne abought the\\
+toged{[}er{]} \& the 2\textsuperscript{d} t{[}or{]}ne Abought the\\
 þe last meve;\red{þ}en þe first \& 2\textsuperscript{d}\\
 meve and al t{[}ur{]}ne Abowth toged{[}er{]}
 
 \subsection{Orange}
-\tmn{Oringe\\ de 3 b{[}us{]}}After the end of þe trace the\\
+\tmn{Oringe\\ de 3 b{[}us{]}}\red{A}fter the end of þe trace the\\
 first iij forth; þe 2\textsuperscript{d} þe same þe\\
 \tmn{A doble t{[}ra{]}ce\\ \& lok at þ{[}e{]} end\\ bak and al\\ to{[}ge{]}d{[}er{]} do obbey}3\textsuperscript{d} the same; \red{t}hen {[}þe{]} first man\\
 throth þa{[}m{]} and go behend; \red{t}hen\\
 the 2\textsuperscript{d} ma{[}n{]} iij forth þe 3\textsuperscript{d} þe sam\\
-þe first þe sam; and throth þa{[}m{]}\\
+\nmn{3}þe first þe sam; and throth þa{[}m{]}\\
 and goo behend; \red{t}hen 3\textsuperscript{d} man\\
-thre forth the \nmn{3} fi{[}r{]}st þe same þe 2\textsuperscript{d}\\
-þe sam \& the \nmn{3}3\textsuperscript{d} throth þa{[}m{]} \& goo\\
-behynd; \red{t}hen þe first iij \nmn{3}bak þ{[}en{]}\\
-þe secn{[}o{]}d iij bak; \red{t}hen all toged{[}er{]}\\
+thre forth the  fi{[}r{]}st þe same þe 2\textsuperscript{d}\\
+þe sam \& the 3\textsuperscript{d} throth þa{[}m{]} \& goo\\
+\nmn{3}behynd; \red{t}hen þe first iij bak þ{[}en{]}\\
+\nmn{3}þe secn{[}o{]}d iij bak; \red{t}hen all toged{[}er{]}\\
 thre forth and thre bake \& t{[}or{]}ne \\
 \srcpg{67}
 \subsection{Hawthorne}
