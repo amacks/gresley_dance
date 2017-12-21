@@ -13,17 +13,26 @@
 % save typing for the red text colouring
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 % This abstracts the insertion of the Gresely source page numbers
-\newcommand{\srcpg}[1]{(start #1)}
+\newcommand{
+\srcpg}[1]{\noindent{\hspace{-1.85in}\color{Gray}{\rule[0.5ex]{6.0in}{1pt}~#1}}\\
+}
+% oriented margin notes
+\newcommand{\tmn}[1]{% Text Margin Note
+\reversemarginpar\marginparsep=11mm{\marginnote{#1}}
+}
+\newcommand{\nmn}[1]{% Numeric Margin Note
+\reversemarginpar\marginparsep=3mm\marginnote{#1}
+}
 % (Not) End of Gresely specific preable additions
 
-\usepackage[nochapters]{classicthesis} % For some font and style options
+\usepackage[nochapters,dottedtoc]{classicthesis} % For some font and style options
 \RequirePackage[letterpaper, top=1in, bottom=1.5in, 
   left=1.5in, right=1.5in,showframe=false]{geometry}
 
 %More Gresely Formatting
-\marginparwidth=2in
-\oddsidemargin=2.15in
-\textwidth=4in
+\marginparwidth=1.5in
+\oddsidemargin=0in
+\textwidth=6.5in
 
 \begin{document}
     \title{\rmfamily\normalfont\spacedallcaps{the gresley manuscript}}
@@ -35,287 +44,462 @@
     \begin{abstract}
         \noindent\lipsum[1] Just a test.\footnote{This is a footnote.}
     \end{abstract}
-       
     \tableofcontents
 \newpage
 
     \section{Dances}
+    \textwidth=3.5in
+    \oddsidemargin=1.75in
+
     %\finalVersionString 
     \reversemarginpar
 %    \raggedright
     \subsection{Esperans} \raggedright 
-\marginnote{Esp{[}er{]}ans de 3{[}bus{]}}\srcpg{54} Al the vj si{[}n{]}glis w{[}ith{]} a trett; þen þe 
-fyrst man
-goo compas till he\marginnote{Trace} come behend whil þe medyll retrett thre and ye last
-iij singlis and ye \marginnote{3}medil iij singlis levyng the last on; \red{t}he left hand 
-and the last iij retrette thus ye m-edill endyth 
-before ye \textsuperscript{last} in ye m-eddist; \red{a}nd the ferst behynd 
-y{[}us{]} dannce iij tymes callyng ev{[}er{]}y man as he 
-\marginnote{3}standdith; \red{A}ft{[}er{]} ye
-end of the t{[}ra{]}ce ye ferst iij 
-fur-th outward t{[}ur{]}nyng Ayen
-his face; then ye 
-\marginnote{1}last co{[}n{]}tur hym and the medill to ye fyrste \& 
-then ye first to his place; \red{y}en the i last to the 
-\marginnote{1}medyll and ye \srcpg{55} medyll to ye last mans 
-place; \red{t}he first and the last chance place
-whil the 
-\marginnote{1}medyll tornyth; \red{A}l at onys re-trett iij bake; bak al 
-at ons; \red{t}hen the first t{[}or{]}ne whyll ye last t{[}or{]}ne 
-i{[}n{]} in hys own place; \red{t}hen al toged{[}er{]} thre 
-furth;
+\srcpg{54}
+\tmn{Esp{[}er{]}ans de 3{[}bus{]}}Al the vj si{[}n{]}glis w{[}ith{]} a trett; þen þe \\* 
+fyrst man goo compas till he \\ 
+\tmn{Trace}come behend whil þe medyll \\ 
+retrett thre and þe last iij singlis \\ 
+\nmn{3}and þe medil iij singlis levyng\\ 
+the last on; \red{t}he left hand and \\
+the last iij retrette thus þe m-\\
+edill endyth before þe \textsuperscript{last} in þe m-\\
+eddist; \red{a}nd the ferst behynd y{[}us{]} \\ 
+dannce iij tymes callyng\\ 
+ev{[}er{]}y man as he standdith; \red{A}ft{[}er{]} þe\\
+\nmn{3}end of the t{[}ra{]}ce þe ferst iij fur-\\
+th outward t{[}ur{]}nyng Ayen his \\ 
+face; then þe  last co{[}n{]}tur hym \\ 
+and the medill to þe fyrste \& \\
+then þe first to his place; \red{y}en \\ 
+the i last to the \nmn{1}medyll and þe  \\
+\srcpg{55}
+medyll to þe last mans  place; \red{t}he\\
+\nmn{1}first and the last chance place whil \\ 
+\nmn{1}the medyll tornyth; \red{A}l at onys re-\\
+trett iij bake; bak al  at ons; \red{t}hen \\ 
+\nmn{1}the first t{[}or{]}ne whyll þe last t{[}or{]}ne i{[}n{]} \\ 
+in hys own place; \red{t}hen al toged{[}er{]}\\ 
+thre furth;
 
     \subsection{Talbott}
-\marginnote{Talbott de 2{[}bus{]}}Aft{[}er{]} the hend of the trace trett retrett and 
-dep{[}ar{]}t the \marginnote{doble t{[}ra{]}ce}first furth right þe secnd {[}con{]}tr{[}ar{]}y 
-hyme and \marginnote{2}t{[}ur{]}ne face to face; \red{t}hen brawle at onys 
-and then com \marginnote{$\frac{2}{1}$}to-gydd{[}er{]}; \red{t}hen trett \& retrett 
-togeds w{[}ith{]} iij singlis forth and chance \marginnote{1}hande; on 
-the same wyes Agayn then\marginnote{2} to ged{[}er{]} ij doblis ij 
-rakis and A t{[}ur{]}ne;
+\tmn{Talbott de 2{[}bus{]}}
+\nmn{1}Aft{[}er{]} the hend of the \\ 
+\nmn{1}trace trett retrett and dep{[}ar{]}t the \\ 
+first furth right þe secn{[}o{]}d {[}con{]}tr{[}ar{]}y \\ 
+\tmn{doble t{[}ra{]}ce}hyme and t{[}ur{]}ne face to face; \red{t}hen \\ 
+\nmn{2}brawle at onys and then com to-\\ 
+gydd{[}er{]}; \red{t}hen trett \& retrett togeds \\ 
+\nmn{2}w{[}ith{]} iij singlis forth and chance \\
+hande; on the same wyes Agayn \\ 
+\nmn{1}then to ged{[}er{]} ij doblis ij rakis and \\ 
+A t{[}ur{]}ne;
 
-\subsection{Mowbray}
-\marginnote{Mowbray de 3bs}Ev{[}er{]}y man trett \& retrett then þe first \& þe last turne outward
-the medyll furth iij singlis then \srcpg{56} all trett and retrett
-w{[}ith{]} \marginnote{with t{[}ra{]}ce}halfe a t{[}or{]}ne fface to face then mett toged{[}er{]}
-then medill ent{[}er{]} w{[}ith{]} halfe a turne; \red{Þ}en þe \marginnote{4} ffrest iij
-singlis outhward and the last od{[}er{]} iij {[}con{]}tr{[}ar{]}y hym þe
-medill iij furth and mett all togeder; \red{t}hen iiJ forth w{[}it{]} halfe a
-torne; \red{t}hen þe last iij singlis outhwartt the first {[}con{]}tr{[}ar{]}y
-hym the medill retrett þe same ty{[}me{]}; \red{t}hen þe first and þe last iij
-bak the medill come betwen them; \red{t}hen half a torne all at onys.
+    \subsection{Mowbray}
+\tmn{Mowbray\\ de 3bs}
+\nmn{1}Ev{[}er{]}y man trett \& retrett \\ 
+then þe first \& þe last turne outward \\ 
+\tmn{with t{[}ra{]}ce}
+\nmn{2}the medyll furth iij singlis; \red{t}hen \\
+\srcpg{56} 
+all trett and retrett w{[}ith{]} halfe a t{[}or{]}ne \\ 
+Face to face then mett toged{[}er{]} þen \\
+medill ent{[}er{]} w{[}ith{]} halfe a turne; \red{Þ}en þe \\
+\nmn{4} ffrest iij singlis outhward and \\
+the last od{[}er{]} iij {[}con{]}tr{[}ar{]}y hym þe m{[}e{]}dill \\ 
+retrett þe same tyme; \red{t}hen the \\
+First and þe last iij bake and þ[e] \\
+medill iij furth and mett All \\ 
+togeder; \red{t}hen iij forth w{[}it{]} halfe \\ 
+A torne; \red{t}hen þe last iij singlis \\ 
+outhwartt the first {[}con{]}tr{[}ar{]}y hym \\ 
+the medill retrett þe same ty[me]; \\ 
+\red{t}hen þe first and þe last iij \\
+bak the medill come betwen \\ 
+them; \red{t}hen half A torne All \\ at onys.
+
+
 
 \subsection{Egle}
-\marginnote{{[}Egle{]} de 3bs}All to gedir trett \& retrett then iij singlis forth \srcpg{57} then the
-medill torne into þe first manys place befor hym; þe first in-to þe
-\marginnote{trace 3}medils manys place whil þe last Brawlyth; then trett and retrett ayen
-and iij forth; then þe first brawll as he standith whill þe secnd and
-the thred change place both on the right shuld{[}er{]} þis dance iij
-tymes and then ev{[}e{]}y ma{[}n{]} shal be in hys Awne place;
+All to gedir trett \& \\ 
+\tmn{{[}Egle{]}\\ de 3bs}retrett then iij singlis forth \\
+\ \\
+\srcpg{57}
+then the medill torne into þe first \\ 
+manys place befor hym; þe first in-\\
+to þe medils manys place whil þe \\
+\tmn{Trace 3}last Brawlyth; \red{t}hen trett and retrett \\
+ayen and iij forth; \red{t}hen þe first \\
+brawll as he standith whill þe \\
+secn{[}o{]}d and the thred change place \\
+both on the right shuld{[}er{]} þis dance \\
+iij tymes and then ev{[}e{]}y ma{[}n{]} shal \\
+be in hys Awne place;
 
 \subsection{{[}unnamed{]}}
-\marginnote{(3)}Aft{[}er{]} the end of the t{[}ra{]}ce ev{[}er{]}y ma{[}n{]} at
-onys retrett to A t{[}ri{]}angle then the first thouth oder two whyll
-þay chance place then all beyng in a t{[}ri{]}angle the first though as
-he com froo þen oder two chance places þem benig all in A t{[}ri{]}angle
-then þ{[}e{]} first \srcpg{58} A long brawll alone þe secnd a fflowr de
-lice whith iij retrette; \red{t}hen þe last ma{[}n{]} trett \& retrett \&
+\nmn{3}Aft{[}er{]} the \\
+end of the t{[}ra{]}ce ev{[}er{]}y ma{[}n{]} at onys \\
+retrett to A t{[}ri{]}angle then the first \\
+thouth oder two whyll þay chance \\
+place then all beyng in a t{[}ri{]}angle \\
+the first though as he com froo; \\
+þen oder two chance places þem \\
+benig all in A t{[}ri{]}angle then þ{[}e{]} first \\
+\srcpg{58} 
+A long brawll alone þe secn{[}o{]}d a \\
+Flowr de lice whith iij retrette; \\
+\red{t}hen þe last ma{[}n{]} trett \& retrett \& \\
 torne
 
 \subsection{Bugill}
-\marginnote{Bugill de 3us}After the end of the t{[}ra{]}ce ev{[}er{]}y ma{[}n{]} toged{[}er{]} two
-doblis þan þe first and þe last fourth right the medill
-{[}con{]}t{[}ra{]}ry \marginnote{Whith t{[}ra{]}ce}hy{[}m{]} and torne face to face met in to a
-t{[}ri{]}angle wyse; \red{t}hen all toged{[}er{]} iv singlis compass; \red{t}hen þe
-last ma{[}n{]} \marginnote{3}throth whill þe oder two {[}con{]}ter hym; \red{t}hen all ronde
-iv singlis then come all toged{[}er{]} and \marginnote{3}dep{[}ar{]}t w{[}it{]} a torn
-the d{[}er{]} þay come fro{[}m{]}; \red{t}hen the medill throth while þe first
-\& the last chance place then met \marginnote{4}all togedere; \red{t}hen e{[}ve{]}ry
-ma{[}n{]} \srcpg{59} from od{[}er{]} retrett iij; \red{t}hen torn all at onys
-than all at onys trett \& \marginnote{1}ret{[}re{]}tt then þe medill tourney þe first
-aboute and leve hym on his left hand whill þe last torne in his
-awn{[}e{]} place;
+\tmn{Bugill\\ de 3us}After the end of the t{[}ra{]}ce\\
+ev{[}er{]}y ma{[}n{]} toged{[}er{]} two doblis þan \\
+þe first and þe last fourth right \\
+the medill {[}con{]}t{[}ra{]}ry hy{[}m{]} and torne \\
+\tmn{Whith t{[}ra{]}ce}face to face met in to a t{[}ri{]}angle \\
+wyse; \red{t}hen all toged{[}er{]} iv singlis \\
+\nmn{3}compass; \red{t}hen þe last ma{[}n{]} throth \\
+whill þe oder two {[}con{]}ter hym; \red{t}hen \\
+all ronde iv singlis then come \\
+all toged{[}er{]} and dep{[}ar{]}t w{[}it{]} A torn\\
+\nmn{3}the d{[}er{]} þay come fro{[}m{]}; \red{t}hen the \\
+medill throth while þe first \& \\
+the last chance place then \\
+mett All togedere; \red{t}hen e{[}ve{]}ry ma{[}n{]} \\
+\srcpg{59} 
+\nmn{1}From od{[}er{]} retrett iij; \red{t}hen torn All\\
+\nmn{1}at onys than all at onys trett \& ret{[}re{]}tt\\
+then þe medill tourney þe first\\
+aboute and leve hym on his left\\
+hand whill þe last torne in his\\
+Awn{[}e{]} place;
 
 \subsection{Prenes a Gard}
-\marginnote{P{[}re{]}nes a gard de trib{[}us{]}}Af{[}er{]} the end of the tr{[}ac{]}e the first ma{[}n{]} lepe þe secnd
-lepe the iij thred torne; \red{t}hen the last lepe þe secnd lepe þe first
-torne the first lepe þe last lepe þe \marginnote{A doble tr{[}ac{]}e}medill torne; \red{t}hen þe the medill
-forth iij singlis w{[}t{]} halfe a torne whill þe first and the last
-\marginnote{3}retrett; \red{t}hen the first torne þ{[}e{]} last lepe; \red{t}hen þe me-dill
-ma{[}n{]} throth whill þe first \& the last change place\marginnote{1} and the medill
-to his place agayn; \red{t}hen the first t{[}or{]}ne retrett \& rake \srcpg{60}\marginnote{3}
-whill þe 2{[}d{]} t{[}or{]}ne rake and retrett and þ{[}e{]} third retret
-rake \& torne then al at onys a flour dilice \& com to-geders;
+\tmn{P{[}re{]}nes a gard\\ de trib{[}us{]}}Af{[}er{]} the end of the\\
+tr{[}ac{]}e the first ma{[}n{]} lepe þe secn{[}o{]}d\\
+\nmn{3}lepe the iij thred torne; \red{t}hen\\
+the last lepe þe secn{[}o{]}d lepe þe\\
+\tmn{A doble tr{[}ac{]}e}first torne the first lepe þe last\\
+lepe þe medill torne; \red{t}hen þe\\ 
+\nmn{3}the medill forth iij singlis w{[}t{]}\\
+halfe a torne whill þe first and the\\
+last retrett; \red{t}hen the first\\
+torne þ{[}e{]} last lepe; \red{t}hen þe me-\\
+dill ma{[}n{]} throth whill þe first \&\\
+the last change place and the\\
+medill to his place Agayn; \red{t}hen\\
+the first t{[}or{]}ne retrett \& rake \\
+\srcpg{60}
+\nmn{3} whill \^{} \textsuperscript{þe 2{[}d{]}} t{[}or{]}ne rake and retrett and þ{[}e{]}\\
+third retret rake \& torne then Al\\
+at onys a flour dilice \& com to-\\
+geders;
 
 \subsection{Pernes on Gre}
-\marginnote{Pernes on gre de 2{[}o{]}bs}Trace forth right vj singlis ather torne oy{[}er{]} aboute \& forth right
-vj singlis ayen; aft{[}er{]} the end of þe trace rak \marginnote{The t{[}ra{]}ce}both to-ged{[}er{]}
-and torne; \red{t}hen face to face vj singlis \marginnote{3} ethir {[}con{]}t{[}ra{]}ry
-od{[}er{]} and iij retrette ayen; \red{t}hen a\marginnote{4} flowr delice of both at onys;
-\red{t}hen change place and torne face to face; \red{t}hen a flowr delice and come
-\marginnote{1}toged{[}er{]};
+\tmn{Pernes\\ on gre de 2{[}o{]}bs}Trace forth right vj\\
+singlis ather torne oþ{[}er{]} aboute \&\\
+forth right vj singlis Ayen; Aft{[}er{]}\\
+\tmn{The t{[}ra{]}ce}the end of þe trace rak both to-\\
+\nmn{3}ged{[}er{]} and torne; \red{t}hen face to face\\
+\nmn{2}vj singlis  ethir {[}con{]}t{[}ra{]}ry od{[}er{]} and iij\\
+retrette Ayen; \red{t}hen A flowr deli\\
+\nmn{1}of both at onys; \red{t}hen change place\\
+and torne face to face; \red{t}hen A flowr\\
+delice and come toged{[}er{]};
 
 \subsection{Princitore}
-\marginnote{Princitore}After þe end of þe trace a longe torne both at onys; \red{t}hen þe first
-\marginnote{De duob{[}us{]}}ma{[}n{]} iij forth and þe od{[}er{]} iij bak and then loke ov{[}er{]}
-\marginnote{Whith t{[}ra{]}ce}þe shuldyr the secnd ma{[}n{]} þe same whill þe first ma{[}n{]}
-followith hyme in the same forme w{[}t{]} obeysaunce at þe last end thus
-\srcpg{61} doo thre tymes and at þe thred ty{[}m{]}\marginnote{3} both retrett then
-ether pase odyr two tymes \& torne; then ether come to od{[}er{]}; \red{t}hen
-the last ma{[}n{]} trett retrett and torne;
+\tmn{Princitore\\ de duob{[}u{]}}After þe\\
+end of þe trace A longe torne both\\
+at onys; \red{t}hen þe first ma{[}n{]} iij forth\\
+\tmn{Whith t{[}ra{]}ce}and þe od{[}er{]} iij bak and then loke\\
+ov{[}er{]} þe shuldyr the secn{[}o{]}d ma{[}n{]} þe\\
+same whill þe first ma{[}n{]} folowith\\
+hyme in the same forme w{[}t{]}\\
+obeysaunce at þe last end thus \\
+\srcpg{61}
+doo thre tymes and at þe thred ty{[}m{]}\\
+both retrett then ether pase odyr\\
+two tymes \& torne; then ether\\
+come to od{[}er{]}; \red{t}hen the last ma{[}n{]} trett\\
+retrett and torne;
 
 \subsection{Armyn}
-\marginnote{Armyn de 3{[}bus{]}}After the end of þe trace the last iij bak þe med-lis od{[}er{]} iij bak
-\marginnote{A doble t{[}ra{]}ce}the first od{[}er{]} iij bake \red{t}hen þe first meve þe secnd half torne þe
-secnd move \& þe last half torne the last move \marginnote{3}and þ{[}e{]} first halfe
-torne; \red{t}hen þe last vi singlis \marginnote{2}forth þe meddist as many to hym; \red{t}hen þe
-first trett retret \marginnote{1}and torne as he standith \red{t}hen brawle al at onys on
-way \& ayen\marginnote{3} the od{[}er{]} way; \red{t}hen ev{[}er{]}y ma{[}n{]} at onys change
-place;\marginnote{2} \red{t}hen þe last man thruth w{[}t{]} a torne whill þe first torne the
-secnd a bought
+\tmn{Armyn de 3{[}bus{]}}
+\nmn{3}After the end\\
+of þe trace the last iij bak þe med-\\
+\tmn{A doble t{[}ra{]}ce}lis od{[}er{]} iij bak the first od{[}er{]} iij bake\\
+\red{t}hen þe first meve þe secn{[}o{]}d half\\
+\nmn{3}torne þe secn{[}o{]}d move \& þe last\\
+half torne the last move \and þ{[}e{]}\\
+first halfe torne; \red{t}hen þe last\\
+\nmn{2}vi singlis forth þe meddist as\\
+many to hym; \red{t}hen þe first trett\\
+\nmn{1}retret and torne as he standith\\
+\nmn{3} \red{t}hen brawle al at onys on way \&\\
+ayen the od{[}er{]} way; \red{t}hen ev{[}er{]}y ma{[}n{]} at\\
+onys change place; \red{t}hen þe last\\
+\nmn{1}man thruth w{[}t{]} A torne whill þe\\
+first torne the secn{[}o{]}d A bought
 
 \subsection{Whatsoever You Will}
-\marginnote{What so eu{[}er{]} y wyll de 2 b{[}us{]}}Afrer the end of the t{[}ra{]}ce trett \srcpg{62} And retrett to geders
-and thre for-th forth w{[}ith{]} a step; \red{t}hen trett \& retrett to geder
-\marginnote{$\frac{2}{1}$}and both torne at onys; \red{t}hen both forth to ged{[}er{]} w{[}ith{]} vi
-\marginnote{$\frac{2}{4}$}sing=lis and \red{t}hen change hands \red{t}hen Forth w{[}ith{]} od{[}er{]} sex
-\marginnote{$\frac{1}{1}$}singlis \& change hands; \red{t}hen trett \& retrettt at onys then rake both
-at onys
+\tmn{What so eu{[}er{]} y\\ wyll de 2 b{[}us{]}}
+\nmn{a}After the end of the t{[}ra{]}ce trett \\
+\ \\
+\srcpg{62}
+\tmn{Doble t{[}ra{]}ce}\ \\
+\nmn{2}\red{A}nd retrett to geders and thre for-\\
+th forth w{[}ith{]} A step; \red{t}hen trett \& retrett\\
+\nmn{1}to geder and both torne at onys;\\
+\red{t}hen both forth to ged{[}er{]} w{[}ith{]} vi sing=\\
+\nmn{2}lis and \red{t}hen change hands \red{t}hen\\
+Forth w{[}ith{]} od{[}er{]} sex singlis \& change\\
+\nmn{1}hands; \red{t}hen trett \& retrettt at onys\\
+\nmn{1}then rake both at onys
 
 \subsection{Petygay}
-\marginnote{Petygay de 3{[}bus{]}}After þe end of the tr{[}ac{]}e ev{[}er{]}y ma{[}n{]} ii{[}i{]} singlis
-after od{[}er{]}; \marginnote{Doble t{[}ra{]}ce}\red{t}hen þe doble trace agayn then torne all at onys
+\tmn{Petygay de 3{[}bus{]}}After þe\\
+end of the tr{[}ac{]}e ev{[}er{]}y ma{[}n{]} ii{[}i{]} singlis\\
+after od{[}er{]}; \red{t}hen þe doble trace Agayn\\
+\tmn{Doble t{[}ra{]}ce}then torne all at onys
 
 \subsection{Tamrett}
-\marginnote{Ta{[}m{]}rett De doubus}After the end of the trace trett \& retret and iij forth to ged{[}er{]};
-\marginnote{2}\red{t}hen trett \& retrett and iij bake then ethir torne othir abought
-\^{}ii; \marginnote{2}\red{t}hen brayl ethir {[}con{]}t{[}ra{]}ry to od{[}er{]} ij tymes \marginnote{whith t{[}ra{]}ce}\red{\&}
-retrett iij other fro od{[}er{]} \& then com toged{[}er{]}\marginnote{1}
+\tmn{Ta{[}m{]}rett\\ De doubus}\red{A}fter\\
+\nmn{2}the end of the trace trett \& retret\\
+and iij forth to ged{[}er{]}; \red{t}hen trett\\
+\& retrett and iij bake then ethir\\
+\nmn{2}torne othir Abought \^{}ii; \red{t}hen brayl\\
+\tmn{whith t{[}ra{]}ce} \nmn{1} ethir {[}con{]}t{[}ra{]}ry to od{[}er{]} ij tymes \red{\&} retrett\\
+iij other fro od{[}er{]} \& then com toged{[}er{]}
 
 \subsection{Green Gynger}
-\marginnote{Grengy{[}n{]}g{[}er{]} de doub{[}us{]} Duble t{[}ra{]}ce w{[}ith{]} a hertt in the end}After þe end of þe t{[}ra{]}ce rak both \srcpg{63} on way and iij the
-end t{[}or{]}ne bak to bak; \red{t}hen rake ayen bak to bake and in the end
-torne face to face then iij singlis ethir {[}con{]}t{[}ra{]}ry\marginnote{Cherwell thy wyne}
-od{[}er{]} \& thre bak ayen; \red{t}hen ethir retrett \marginnote{$\frac{2}{3}$}from \^{}odir iij
-singlis; \red{t}hen come toged{[}er{]} and mak a hertt ayen\marginnote{1}
+\tmn{Grengy{[}n{]}g{[}er{]}\\ de doub{[}us{]}}After þe end of þe t{[}ra{]}ce rak both \\
+\srcpg{63}
+\tmn{Duble t{[}ra{]}ce w{[}ith{]}\\ a hertt in the\\ end}\ 
+
+on way and iij the end t{[}or{]}ne bak to\\
+\nmn{2}bak; \red{t}hen rake ayen bak to bake\\
+\tmn{Cherwell\\ thy wyne}and in the end torne face to face\\
+then iij singlis ethir {[}con{]}t{[}ra{]}ry od{[}er{]} \&\\
+\nmn{3}thre bak Ayen; \red{t}hen ethir retrett\\
+from \^{}odir iij singlis; \red{t}hen come toged{[}er{]}\\
+\nmn{1}and mak a hertt Ayen
 
 \subsection{Sofferance}
-\marginnote{Sofferance de duob{[}us{]}}After the end of þe trace the first iij forth and torne whyll þe last
-\marginnote{A doble t{[}ra{]}ce}retrett; \red{t}hen the last forth \& torne whyll þe first retrett and then\marginnote{3} 
-both retrett ethir from od{[}er{]}; \red{t}hen the first a flowr delice the\marginnote{2}
-sec{[}o{]}nd Anothir; \red{t}hen ethir {[}con{]}tr{[}a{]}ry other iij singlis\marginnote{3}
-on þ{[}e{]} left syd \red{a}nd then come to ged{[}er{]} then trett and retrett
-and torn\marginnote{2}
+\tmn{Sofferance\\ de duob{[}us{]}}\red{A}fter\\
+the end of þe trace the first iij\\
+\nmn{3} forth and torne whyll þe last \\
+\tmn{A doble t{[}ra{]}ce}retrett; \red{t}hen the last forth \&\\ 
+torne whyll þe first retrett\\
+and then both retrett ethir\\
+\nmn{2}From od{[}er{]}; \red{t}hen the first A flowr\\
+delice the sec{[}o{]}nd Anothir; \red{t}hen\\
+\nmn{3}ethir {[}con{]}tr{[}a{]}ry other iij singlis on þ{[}e{]}\\
+left syd \red{a}nd then come to ged{[}er{]}\\
+\nmn{2}then trett and retrett and torn
 
 \subsection{Lybens}
-\marginnote{Lebens dis {[}{]}nens de 2{[}bus{]}}After the end of þe t{[}ra{]}ce the first iij forth and torne whill the
-\srcpg{64} Sec{[}o{]}nd retrett iij bake then com to ged{[}er{]} and\marginnote{A\^{}n}
-ethir torne into oders plas; \red{t}hen last ma{[}n{]} iij forth \& torn whill\marginnote{2}
-þe first retrett; \red{t}hen come to ged{[}er{]} in suchwys as þay ded afore\marginnote{1}
-and ethir end in ther own place then trett and retrett and torn
+\tmn{Lebens di\\ {[}{]}nens de 2{[}bus{]}}
+\nmn{a\textsuperscript{n}}After the end of þe t{[}ra{]}ce the\\
+first iij forth and torne\footnote{Added in the bottom margin} whill the \\
+\srcpg{64}
+\red{S}ec{[}o{]}nd retrett iij bake then com to\\
+ged{[}er{]} and ethir torne into oders\\
+plas; \red{t}hen last ma{[}n{]} iij forth \& torn\\
+\nmn{2}whill þe first retrett; \red{t}hen come to\\
+ged{[}er{]} in suchwys as þay ded Afore\\
+and ethir end in ther own place\\
+\nmn{1}then trett and retrett and torn
 
 \subsection{Aras}
-\marginnote{Aras de 2{[}obus{]}}\red{A}fter the end of the trace rak both on way; \red{t}hen the first ma{[}n{]}
-\marginnote{2}torne whill þe sec{[}o{]}nd retrett; \red{þ}en face to face rak
-\marginnote{2}{[}con{]}t{[}ra{]}ry way; \red{t}hen the sec{[}o{]}nd torne whill þe first
-retrett; \red{t}hen trett and retrett at onys and come to ged{[}er{]} whith
-obeysawnce; \red{t}hen torn bessily to þ{[}r{]} awn place ayen; \red{t}hen
-e{[}ver{]}y {[}con{]}t{[}ra{]}ry other iij singlis and iij bak ayen;
-\red{t}hen a flowre delice and torne
+\tmn{Aras de 2{[}obus{]}}\red{A}fter the end of the trace rak\\
+both on way; \red{t}hen the first ma{[}n{]}\\
+torne whill þe sec{[}o{]}nd retrett; \red{þ}en\\
+\nmn{2}face to face rak \nmn{2}{[}con{]}t{[}ra{]}ry way; \red{t}hen\\
+the sec{[}o{]}nd torne whill þe first\\
+retrett; \red{t}hen trett and retrett\\
+\nmn{2}at onys and come to ged{[}er{]} whith\\
+obeysawnce; \red{t}hen torn bessily\\
+to þ{[}r{]} Awn place Ayen; \red{t}hen e{[}ver{]}\\
+{[}con{]}t{[}ra{]}ry other iij singlis and iij bak\\
+\nmn{1}Ayen; \red{t}hen A flowre delice and\\
+torne
 
 \subsection{Eglamore}
-\marginnote{Eglamowr de trib{[}us{]}}After the end of the tr{[}ace{]} \srcpg{65} The first thre forth þe
-\marginnote{Double t{[}ra{]}}sec{[}o{]}nd þe same the 3\textsuperscript{d} the same; \red{t}hen the first
-\marginnote{3}ma{[}n{]} outward on the left shulder and goo behend þe
-2\textsuperscript{d} the same the 3\textsuperscript{d} þe same; \marginnote{3}\red{t}hen the
-first out þe 2\textsuperscript{d} out þe 3\textsuperscript{d} out
+\tmn{Eglamowr\\ de trib{[}us{]}}After the end of the tr{[}ace{]} 
+\\ \ \\
+\srcpg{65}
+\red{T}he first thre forth þe \tmn{Double t{[}ra{]}}sec{[}o{]}nd þe\\
+\nmn{3}same the 3\textsuperscript{d} the same; \red{t}hen the\\
+first ma{[}n{]} outward on the left\\
+shulder and goo behend þe 2\textsuperscript{d}\\
+\nmn{3}the same the 3\textsuperscript{d} þe same; \red{t}hen\\
+the first out þe 2\textsuperscript{d} out þe 3\textsuperscript{d} out
 
 \subsection{New Year}
-After the\marginnote{New yer de t{[}ri{]}b{[}us{]}} end of the t{[}ra{]}ce þe firste ma{[}n{]} iij forth the
-\marginnote{A doble tr{[}ac{]}e}2\textsuperscript{d} þe same þe 3\textsuperscript{d} the same; \red{t}hen al
-togeder halfe torne thre tymes; \marginnote{$\frac{3}{3}$}\red{t}hen the last thre forth the
-sec{[}o{]}nd the same þe 3\textsuperscript{d} þe same; \marginnote{3}\red{a}nd then al
-togedeer half torne
+\tmn{New yer\\ de t{[}ri{]}b{[}us{]}}
+\nmn{3\textsuperscript{a}}\red{A}fter the end of the t{[}ra{]}ce þe firste\\
+ma{[}n{]} iij forth the 2\textsuperscript{d} þe same þe  3\textsuperscript{d}\\
+\nmn{3}the same; \red{t}hen Al togeder halfe\\
+ \tmn{A doble tr{[}ac{]}e} torne thre tymes; \red{t}hen the last\\
+\nmn{3}thre forth the sec{[}o{]}nd the same þe\\
+3\textsuperscript{d} þe same; \red{a}nd then al togedeer\\
+\nmn{3}half torne\footnote{Marginal 3 could apply to either this dance or the next}
 
 \subsection{Roye}
-\marginnote{Roye de 3 b{[}us{]}}After the end of þe trace the first man thre furth the sec{[}o{]}nd the
-\marginnote{A doble t{[}ra{]}ce \& iij bak i{[}n{]} þ{[}e{]} en{[}d{]}} same þe iij the sam then al rak togeders forth; \red{t}hen bak rak ayen and
-all torn toged \red{t}hen the first man move þen þe sec{[}o{]}nd and\marginnote{3} þe
-3\textsuperscript{d} move \& þe first ma{[}n{]} \srcpg{66}\marginnote{2} torne
-abought; \red{t}hen þe sec{[}o{]}nd ma{[}n{]} me{[}v{]}e; the first and þe
-\marginnote{3}last meve toged{[}er{]} \& the 2\textsuperscript{d} t{[}or{]}ne abought
-the þe last meve; \red{þ}en þe first \& 2\textsuperscript{d} meve and al
-t{[}ur{]}ne abowth toged{[}er{]}
+\tmn{Roye de 3 b{[}us{]}}\red{A}fter the end of þ{[}e{]}\\
+trace the first man thre furth\\
+\tmn{A doble t{[}ra{]}ce\\ \& iij bak i{[}n{]} þ{[}e{]} en{[}d{]}}the sec{[}o{]}nd the same þe iij the sam\\
+\red{t}hen Al rak togeders forth; \red{t}hen\\
+bak rak Ayen and All torn toged\\
+\red{t}hen the first man move þen þe\\
+sec{[}o{]}nd and\nmn{3} þe 3\textsuperscript{d} move \& þe first ma{[}n{]} \\
+\srcpg{66}
+\nmn{2} torne Abought; \red{t}hen þe sec{[}o{]}nd ma{[}n{]}\\
+me{[}v{]}e; the first and þe \nmn{3}last meve\\
+toged{[}er{]} \& the 2\textsuperscript{d} t{[}or{]}ne Abought the\\
+þe last meve;\red{þ}en þe first \& 2\textsuperscript{d}\\
+meve and al t{[}ur{]}ne Abowth toged{[}er{]}
 
 \subsection{Orange}
-\marginnote{Oringe de 3 b{[}us{]}}After the end of þe trace the first iij forth; þe 2\textsuperscript{d}
-þe same þe 3\textsuperscript{d} the same;\marginnote{A doble t{[}ra{]}ce \& lok at þ{[}e{]} end bak and al
-to{[}ge{]}d{[}er{]} do obbey} \red{t}hen {[}þe{]} first man throth
-þa{[}m{]} and go behend; \red{t}hen the 2\textsuperscript{d} ma{[}n{]} iij
-forth þe 3\textsuperscript{d} þe sam þe first þe sam; and throth
-þa{[}m{]} and goo behend; \red{t}hen 3\textsuperscript{d} man thre forth the \marginnote{3}
-fi{[}r{]}st þe same þe 2\textsuperscript{d} þe sam \& the
-\marginnote{3}3\textsuperscript{d} throth þa{[}m{]} \& goo behynd; \red{t}hen þe first iij
-\marginnote{3}bak þ{[}en{]} þe secnd iij bak; \red{t}hen all toged{[}er{]} thre forth and
-thre bake \& t{[}or{]}ne
-
+\tmn{Oringe\\ de 3 b{[}us{]}}\red{A}fter the end of þe trace the\\
+first iij forth; þe 2\textsuperscript{d} þe same þe\\
+\tmn{A doble t{[}ra{]}ce\\ \& lok at þ{[}e{]} end\\ bak and al\\ to{[}ge{]}d{[}er{]} do obbey}3\textsuperscript{d} the same; \red{t}hen {[}þe{]} first man\\
+throth þa{[}m{]} and go behend; \red{t}hen\\
+the 2\textsuperscript{d} ma{[}n{]} iij forth þe 3\textsuperscript{d} þe sam\\
+\nmn{3}þe first þe sam; and throth þa{[}m{]}\\
+and goo behend; \red{t}hen 3\textsuperscript{d} man\\
+thre forth the  fi{[}r{]}st þe same þe 2\textsuperscript{d}\\
+þe sam \& the 3\textsuperscript{d} throth þa{[}m{]} \& goo\\
+\nmn{3}behynd; \red{t}hen þe first iij bak þ{[}en{]}\\
+\nmn{3}þe secn{[}o{]}d iij bak; \red{t}hen all toged{[}er{]}\\
+thre forth and thre bake \& t{[}or{]}ne \\
+\srcpg{67}
 \subsection{Hawthorne}
-\marginnote{Hawthorne de duob{[}us{]}}\srcpg{67} Thre singlis and thre Rakkys \& a
-stop and torne; then þ{[}e{]} First 3 synglis and þre retrette þe
-ij\textsuperscript{de} e{[}con{]}tra the same tyme þe
-2\textsuperscript{de} thre singlis \& thre retrette; the First
-e{[}con{]}tra the same ty{[}m{]}; the first trett \& retrett and torne
-then þe sec{[}o{]}nd þe same; then face to face þe first make a floure
-delice and þre retrette the 2\textsuperscript{d} þe same; then at onys a
-Flo{[}ur{]} delice and cu{[}m{]} to gedd{[}er{]}; then þe horne horne
-pepy to gedd{[}er{]} then at onys a long trett retrett and torne
+\tmn{Hawthorne \\ de duob{[}us{]}} Thre singlis and thre Rakkys \&\\
+a stop and torne; then þ{[}e{]} First 3\\
+synglis and þre retrette þe ij\textsuperscript{de} e{[}con{]}tra\\
+the same tyme þe 2\textsuperscript{de} thre singlis\\
+\& thre retrette; the First e{[}con{]}tra the\\
+same ty{[}m{]}; the first trett \& retrett\\
+and torne then þe sec{[}o{]}nd þe same\\
+;then face to face þe first make\\
+A floure delice and þre retrette\\
+the 2\textsuperscript{d} þe same; then at onys A\\
+Flo{[}ur{]} delice and cu{[}m{]} to gedd{[}er{]}; then\\
+þe horne horne pepy to gedd{[}er{]}\\
+then at onys A long trett retrett\\
+and torne
 
 \subsection{Newcastle}
-\marginnote{Newcastell de dubus}The first thre forth \& torne whyls þe last retrett rek the last torne
-\marginnote{Suff}whils þe first retrett; then þe first aflo{[}ur{]} delice þe
-2\textsuperscript{e} þe same; \marginnote{a dubull t{[}ra{]}ce}then thre singlis a þ\textsuperscript{e}
-{[}con{]}tra to od{[}er{]}; \srcpg{68} And in the same wis
-{[}con{]}tr{[}ar{]}y agayn \& come togedd{[}er{]}; then trett retrett
-and torne;
+\tmn{Newcastell\\ de dubus}The first thre forth\\
+\& torne whyls þe last retrett rek\\
+\tmn{Suff}the last torne whils þe first retrett;\\
+then þe first aflo{[}ur{]} delice þe 2\textsuperscript{e} þe\\
+\tmn{a dubull t{[}ra{]}ce}same; then thre singlis a þ\textsuperscript{e} {[}con{]}tra to od{[}er{]}; \\
+\srcpg{68}
+And in the same wis {[}con{]}tr{[}ar{]}y agayn \&\\
+come togedd{[}er{]}; then trett retrett and\\
+torne;
 
 \subsection{Damesyn}
-\marginnote{Damesyn de 3b{[}us{]}}All togedd{[}er{]} thre singlis w{[}ith{]} a stope \textsuperscript{+}
-iij retrett \& thre forth and so ij tymys; then at þe
-\reversemarginpar\marginnote{t{[}ra{]}ce}iij\textsuperscript{d} t{[}ra{]}ce 3 singlis w{[}ith{]} a stope; then þe
-first \& þe last a holl torne the medyll a halfe torn þe same ty{[}m{]};
-the first and the last forth right þe medill {[}con{]}tr{[}ar{]}y them
-and the end þay two changs place whil; þe medill torn hy{[}m{]} to þam;
-the first to þe last; manys place; þe last to his place all
-togedd{[}er{]} 2 whill þe medyll goo throth þame; the first lepe all
-togedd{[}er{]} lepe then þe last; lepe; þen the medyll; þen torn all at
-onys; the first \& þe last; \srcpg{69} Forth right þe medill
-{[}con{]}tr{[}ar{]}y hem \& in þe end þay chang place whils the medyll
-torn toward þam and in the sam wys agayn savyng in in the end
-ev{[}er{]}y ma{[}n{]} kep his one place; then þe last to þe first
-ma{[}n{]}is place and first to þe last manys place the medill come to
-w{[}ith{]} thre singlis
+\tmn{Damesyn\\ de 3b{[}us{]}}All togedd{[}er{]} thre singlis w{[}ith{]} {t{[}ra{]}ce}\footnote{"trace" appears in the margin, has been moved into the text}\\
+a stope \textsuperscript{+} iij retrett \& thre forth and\\
+so ij tymys; then at þe iij\textsuperscript{d} t{[}ra{]}ce 3\\
+singlis w{[}ith{]} a stope; then þe first \&\\
+þe last a holl torne the medyll A\\
+halfe torn þe same ty{[}m{]}; the first\\
+and the last forth right þe medill\\
+{[}con{]}tr{[}ar{]}y them and the end þay two\\
+changs place whil; þe medill torn\\
+hy{[}m{]} to þam; the first to þe last;\\
+manys place; þe last to his place\\
+all togedd{[}er{]} 2 whill þe medyll\\
+goo throth þame; the first lepe\\
+all togedd{[}er{]} lepe then þe last;\\
+lepe; þen the medyll; þen torn\\
+all at onys; the first \& þe last; \\
+\srcpg{69} 
+Forth right þe medill {[}con{]}tr{[}ar{]}y hem\& \\
+in þe end þay chang place whils\\
+the medyll torn toward þam and\\
+in the sam wys agayn savyng in\\
+in the end ev{[}er{]}y ma{[}n{]} kep his one\\
+place; then þe last to þe first ma{[}n{]}is\\
+place and first to þe last manys\\
+place the medill come to w{[}ith{]} thre\\
+singlis
 
 \subsection{Rawty}
-\marginnote{Rawty de 2bus}Trett retrett togedd{[}er{]}s then thre singlis w{[}ith{]} a stope and
-\marginnote{A dubel {[}trace{]}}thre retrett w{[}ith{]} a stop both togedd{[}er{]} in þe sam wis agayn;
-then trett and retrett and dep{[}er{]}t þe first forth rygh;
-aflo{[}ur{]} delice and cum togedd{[}er{]} and athir rak
-{[}con{]}tr{[}ar{]}y to; othir agay aflo{[}ur{]} delice and cu{[}m{]}
-togedder
+\tmn{Rawty\\ de 2bus}Trett retrett togedd{[}er{]}s\\
+then thre singlis w{[}ith{]} a stope and\\
+thre retrett w{[}ith{]} a stop both togedd{[}er{]}\\
+\tmn{A dubel {[}trace{]}}in þe sam wis agayn; then trett\\
+and retrett and dep{[}er{]}t þe first\\
+forth rygh; aflo{[}ur{]} delice and cum\\
+togedd{[}er{]} and athir rak {[}con{]}tr{[}ar{]}y to;\\
+othir agay aflo{[}ur{]} delice and cu{[}m{]}\\
+togedder \\
+\srcpg{70}
 
 \subsection{Temperance}
-\marginnote{Temp{[}er{]}ans}\srcpg{70} All trett and retrett thre singlis w{[}ith{]} a stop then þe
-first and þ{[}e{]} me=dyll togedd{[}er{]} retrett; while þe last goth
-\marginnote{Trace}forth and cu{[}m{]} togedd{[}er{]} agayn in the same forme sav=yng in
-the end wher þe laste; dep{[}er{]}tytt þe secnd shall þe thred the first
-shall; then ev{[}er{]}y man togedd{[}er{]} two dubles on þe left fott
-and halfe a torn; then ev{[}er{]}y man the same {[}con{]}tr{[}ar{]}y
-wyes agayn then all togedd{[}er{]} trett retrett and thre rakke then all
-toged{[}er{]} aflo{[}ur{]} delice; then þe first ma{[}n{]} throw whils
-þe tothir two cha=nge place; then þe first 3 forth w{[}ith{]} a torn þe
-2\textsuperscript{d} þe same þe 3 þe same w{[}ith{]} out a torn then the
-\srcpg{71} first lepe the secnd lepe þe last lepe; then all torn
-w{[}ith{]} a rest in the meddys
+\tmn{Temp{[}er{]}ans\\ de 3b{[}u{]}} All trett and retrett thre singlis\\
+w{[}ith{]} a stop then þe first and þ{[}e{]} me=\\
+dyll togedd{[}er{]} retrett; while þe\\
+last goth forth and cu{[}m{]} togedd{[}er{]}\\
+Agayn in the same forme sav=\\
+yng in the end wher þe laste;\\
+\tmn{Trace}dep{[}er{]}tytt þe secn{[}o{]}d shall þe thred\\
+the first shall; then ev{[}er{]}y man\\
+togedd{[}er{]} two dubles on þe left\\
+fott and halfe a torn; then ev{[}er{]}y\\
+man the same {[}con{]}tr{[}ar{]}y wyes agayn\\
+then all togedd{[}er{]} trett retrett\\
+and thre Rakke then all toged{[}er{]}\\
+Aflo{[}ur{]} delice; then þe first ma{[}n{]}\\
+throw whils þe tothir two cha=\\
+nge place; then þe first 3 forth\\
+w{[}ith{]} a torn þe 2\textsuperscript{d} þe same þe 3 þe\\
+same w{[}ith{]} out a torn then the \\
+\srcpg{71} 
+first lepe the secn{[}o{]}d lepe þe last\\
+lepe; then all torn w{[}ith{]} a rest\\
+in the meddys
 
 \subsection{Northumberland}
-\marginnote{Northhu{[}m{]}bland de 3{[}bus{]}}Togedd{[}er{]} thre si{[}n{]}g=lis w{[}ith{]} a stop trett and retrett;
-then þe first \sout{þ} ma{[}n{]} torn in hys own place whill the last
-\marginnote{Trace}torn the medyll abowytt; togedd{[}er{]} agayn w{[}ith{]} thre singlis
-and a stop trett and retrett; then halfe a torn and torn agayn 3
-toge=dd{[}er{]} then agay w{[}ith{]} thre singlis and a stope \& trett
-and retrett then þe first; torn þe meddyll abowt whils þe last ma{[}n{]}
-torn in his own place; then ev{[}er{]}y man a mevyng; then þe first and
-the last torn owtward go=yng forth vj singlis the 2\textsuperscript{d}
-forth \srcpg{72} right torn all face to face and þ\textsuperscript{e}
-thred brayll þe toþ\textsuperscript{e} two cu{[}m{]} to hy{[}m{]} and
-goo to þ\textsuperscript{e} place agay{[}n{]}; then þe
-3\textsuperscript{d} and þe 2\textsuperscript{d} brayll the; meddyll
-cu{[}m{]} to þem and go to his awn place agayn; then the first and þe
-last lepe to gedd{[}er{]} þe meddyll lepe alone; then þe meddyll throw
-whils othir two hym t{[}ur{]}nyg all face to face; All at onys
-aflo{[}ur{]} delice the first and þe meddyl rak tell þay mett whill þe
-last; retrett; aflo{[}ur{]} delice at onys þe meddell and þe last rake
-whil þay mett while the first retrett than all cu{[}m{]} togedder
+\tmn{Northhu{[}m{]}b\\land de 3{[}bus{]}}Togedd{[}er{]} thre si{[}n{]}g=\\
+lis w{[}ith{]} a stop trett and retrett;\\
+then þe first \sout{þ} ma{[}n{]} torn in hys\\
+\tmn{Trace}own place whill the last torn\\
+the medyll abowytt; togedd{[}er{]}\\
+agayn w{[}ith{]} thre singlis and a stop\\
+trett and retrett; then halfe\\
+a torn and torn agayn 3 toge=\\
+dd{[}er{]} then agay w{[}ith{]} thre singlis\\
+and a stope \& trett and retrett\\
+then þe first; torn þe meddyll\\
+abowt whils þe last ma{[}n{]} torn\\
+in his own place; then ev{[}er{]}y\\
+man a mevyng; then þe first\\
+and the last torn owtward go=\\
+yng forth vj singlis the 2\textsuperscript{d} forth \\
+\srcpg{72}
+right torn all face to face and þ\textsuperscript{e}\\
+thred brayll þe toþ\textsuperscript{e} two cu{[}m{]} to hy{[}m{]}\\
+and goo to þ\textsuperscript{e} place agay{[}n{]}; then\\
+þe 3\textsuperscript{d} and þe 2\textsuperscript{d} brayll the;\\
+meddyll cu{[}m{]} to þem and go to\\
+his awn place agayn; then\\
+the first and þe last lepe to\\
+gedd{[}er{]} þe meddyll lepe Alone;\\
+then þe meddyll throw whils\\
+othir two hym t{[}ur{]}nyg\\
+all face to face; All at onys aflo{[}ur{]}\\
+delice the first and þe meddyl\\
+rak tell þay mett whill þe last;\\
+retrett; aflo{[}ur{]} delice at onys þe\\
+meddell and þe last rake whil\\
+þay mett while the first\\
+retrett than all cu{[}m{]} togedder
 
 \newpage
 
