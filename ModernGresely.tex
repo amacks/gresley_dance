@@ -13,13 +13,28 @@
 % save typing for the red text colouring
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 % This abstracts the insertion of the Gresely source page numbers
+
+%% use this one for double-left notes
 \newcommand{
-\srcpg}[1]{\noindent{\hspace{-1.85in}\color{Gray}{\rule[0.5ex]{6.0in}{1pt}~#1}}\\
+\srcpgL}[1]{\noindent{\hspace{-1.85in}\color{Gray}{\rule[0.5ex]{6.0in}{1pt}~#1}}\\
 }
-% oriented margin notes
-\newcommand{\tmn}[1]{% Text Margin Note
+%% use this one for left-right notes
+\newcommand{
+\srcpgR}[1]{\noindent{\hspace{-0.85in}\color{Gray}{\rule[0.5ex]{5.5in}{1pt}~#1}}\\
+}
+\newcommand{\srcpg}[1]{\srcpgL{#1}}
+
+% left oriented margin notes
+\newcommand{\tmnL}[1]{% Text Margin Note Left
 \reversemarginpar\marginparsep=11mm{\marginnote{#1}}
 }
+\newcommand{\tmnR}[1]{% Text Margin Note Right
+\normalmarginpar\marginnote{#1}
+}
+\newcommand{\tmn}[1]{
+\tmnL{#1}
+}
+
 \newcommand{\nmn}[1]{% Numeric Margin Note
 \reversemarginpar\marginparsep=3mm\marginnote{#1}
 }
@@ -30,9 +45,15 @@
   left=1.5in, right=1.5in,showframe=false]{geometry}
 
 %More Gresely Formatting
+%% use these for left-left formatting
 \marginparwidth=1.5in
 \oddsidemargin=0in
 \textwidth=6.5in
+
+%% use these for left/right formatting
+%\marginparwidth=2in
+%\oddsidemargin=1.15in
+%\textwidth=3.5in
 
 \begin{document}
     \title{\rmfamily\normalfont\spacedallcaps{the gresley manuscript}}
@@ -272,14 +293,14 @@ and iij forth to ged{[}er{]}; \red{t}hen trett\\
 iij other fro od{[}er{]} \& then com toged{[}er{]}
 
 \subsection{Green Gynger}
-\tmn{Grengy{[}n{]}g{[}er{]}\\ de doub{[}us{]}}After þe end of þe t{[}ra{]}ce rak both \\
+\tmn{Grengy{[}n{]}g{[}er{]}\\ de doub{[}us{]}}\\
+After þe end of þe t{[}ra{]}ce rak both \\
 \srcpg{63}
 \tmn{Duble t{[}ra{]}ce w{[}ith{]}\\ a hertt in the\\ end}\ 
-
 on way and iij the end t{[}or{]}ne bak to\\
 \nmn{2}bak; \red{t}hen rake ayen bak to bake\\
-\tmn{Cherwell\\ thy wyne}and in the end torne face to face\\
-then iij singlis ethir {[}con{]}t{[}ra{]}ry od{[}er{]} \&\\
+and in the end torne face to face\\
+\tmn{Cherwell\\ thy wyne}then iij singlis ethir {[}con{]}t{[}ra{]}ry od{[}er{]} \&\\
 \nmn{3}thre bak Ayen; \red{t}hen ethir retrett\\
 from \^{}odir iij singlis; \red{t}hen come toged{[}er{]}\\
 \nmn{1}and mak a hertt Ayen
