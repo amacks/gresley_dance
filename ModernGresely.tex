@@ -20,9 +20,9 @@
 }
 %% use this one for left-right notes
 \newcommand{
-\srcpgR}[1]{\noindent{\hspace{-0.85in}\color{Gray}{\rule[0.5ex]{5.5in}{1pt}~#1}}\\
+\srcpgR}[1]{\noindent{\hspace{-0.65in}\color{Gray}{\rule[0.5ex]{5.5in}{1pt}~#1}}\\
 }
-\newcommand{\srcpg}[1]{\srcpgL{#1}}
+\newcommand{\srcpg}[1]{\srcpgR{#1}}
 
 % left oriented margin notes
 \newcommand{\tmnL}[1]{% Text Margin Note Left
@@ -32,7 +32,7 @@
 \normalmarginpar\marginnote{#1}
 }
 \newcommand{\tmn}[1]{
-\tmnL{#1}
+\tmnR{#1}
 }
 
 \newcommand{\nmn}[1]{% Numeric Margin Note
@@ -50,10 +50,10 @@
 \oddsidemargin=0in
 \textwidth=6.5in
 
-%% use these for left/right formatting
-%\marginparwidth=2in
-%\oddsidemargin=1.15in
-%\textwidth=3.5in
+%% use these for left/right formatting.  Comment out for left-left
+\marginparwidth=1in 
+\oddsidemargin=1.15in 
+\textwidth=3.25in 
 
 \begin{document}
     \title{\rmfamily\normalfont\spacedallcaps{the gresley manuscript}}
