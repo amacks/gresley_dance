@@ -22,7 +22,7 @@
 \newcommand{
 \srcpgR}[1]{\noindent{\hspace{-0.65in}\color{Gray}{\rule[0.5ex]{5.5in}{1pt}~#1}}\\
 }
-\newcommand{\srcpg}[1]{\srcpgR{#1}}
+\newcommand{\srcpg}[1]{\srcpgL{#1}}
 
 % left oriented margin notes
 \newcommand{\tmnL}[1]{% Text Margin Note Left
@@ -32,7 +32,7 @@
 \normalmarginpar\marginnote{#1}
 }
 \newcommand{\tmn}[1]{
-\tmnR{#1}
+\tmnL{#1}
 }
 
 \newcommand{\nmn}[1]{% Numeric Margin Note
@@ -51,9 +51,9 @@
 \textwidth=6.5in
 
 %% use these for left/right formatting.  Comment out for left-left
-\marginparwidth=1in 
-\oddsidemargin=1.15in 
-\textwidth=3.25in 
+%\marginparwidth=1in 
+%\oddsidemargin=1.15in 
+%\textwidth=3.25in 
 
 \begin{document}
     \title{\rmfamily\normalfont\spacedallcaps{the gresley manuscript}}
@@ -70,11 +70,69 @@
 \section{List of Dances}
 \begin{center}
 \LARGE
-\begin{tabular}{lcl|clr}   %remove | to remove vertical centre line
-A & 2 & Avent{[}y{]} & 2 & Colert rose & \\
+\begin{tabular}{lcl clr}   %remove | to remove vertical centre line
+A & 2 & Avent{[}y{]} *& 2 & Colert rose & \\
   & 2 & Aleigemoy & 2 & Camamell & \\
-  & 2 & Aras & 2 & Chaumby & \\
-  & \underline{2} & \underline{Arandell} & 2 & Caricanto & \\
+  & 2 & Aras *) & 2 & Chaumby & \\
+  & \underline{2} & \underline{Arandell} *) & 2 & Caricanto & \\
+  & 3 & Assay *) & 3 & Conmfort *) & \\
+  & 3 & Attendans & & Damysyn & D \\
+  & 2 & Al þ[e] floe[rs] of & & Daysy dallya \footnote{Unclear if this is a new dance or continuation of the name "Damysyn"} * & \\
+  &   & the bro[m]m & 2 & Defformes ) & \\
+  &   & Armen *) & 2 & Delyte *) & \\
+  & 2 & Bellybrok & 2 & Desir *) & \\
+  & 2 & Beaute *) & 2 & Eglyntyn & E \\
+  & 2 & Basell *) & 2 & Ev[er] to end[]y & \\
+  & 2 & Baeon *) & 3 & Eglamowr & \\
+  & 2 & Beteyn *) & 3 & Esp[er]ans *) & \\
+  & 2 & Burgon \footnote{"ur" is speculative, minims are unclear}  *) & 3 & Egle *) & \\
+  & 3 & Beugull *)  \\
+  & 2 \& 3 & Bonryn & 3 & Fortune *) & F \\
+C & 2 & Carbonet & 2 & Grene Gy[n]g[er] & \\
+  & 2 & Crymesyn & 2 & Giffith*) & \\
+\end{tabular}
+\newpage
+\begin{tabular}{lcl clr}   %remove | to remove vertical centre line
+  & 3 & Grenlene ) & 2 & Macomplent & \\
+H & 2 & Hathorne *) & 2 & Malory*)  & \\
+I & 2 & Joyes desiy[r] & 3 & Mounferramit & \\
+  & 2 & Iohn bean= & 3 & Moubray & \\
+  &   & [s]hir *) \\
+  & 3 & Jeynys & • & New castell da[n]sh & N \\
+  & 4 & Joly bokett ) & 3 & Northu[m]bland & \\
+  & 2 & Ine *) & 2 & New founde & \\
+K & • & Kendall *) & &  Newtythynge & \\
+L & 2 & Lefarannt & 3 & New yere *) & \\
+  & 2 & Lez mount[n]es & 2 & Orlyanse *) & \\
+  & 2 & Lez novell & 3 & Orynge *) & \\
+  & 2 & Leu[er] duy \footnote{Exact reading unclear} & 2 & Peteous *) & P \\
+  & 2 & L[][er]nell \footnote{Second 2 letters unclear} *) & 2 & Plesantyne & \\
+  & 2 & Lubens di= & 2 & Plesans *) & \\
+  &   & stune[u] *) & 3 & Petygey & \\
+  &   & Len[er]s a da[n]sh \footnote{There is a flying symbol over the "n", meaning unclear.  Could be part of the title of the previous dance (Lu bens)} & 2 & P[er]nes in gre & \\
+  & 3 & Laduches & 3 & P[er]nez in gard & \\
+M & 2 & My lady m[a]y[e/s] \footnote{Final word unclear} & 3 & P[] [u]lo plesowr \footnote{Final word unclear} & \\
+\end{tabular}
+\newpage
+\begin{tabular}{lcl clr}   %remove | to remove vertical centre line
+  &   & P[er]synam[or] da[n]sh & 3 & Violett & \\
+  & 2 & Princytory &   & What þe lust & \\
+R & 2 & Russett *) & 2 & What soev[er] & \\
+  & 2 & Roty loly ioy &   & yo well & \\
+  & 2 & Raynes & & & \\
+  & 2 & Roye *) & & & \\
+S & 2 & Sa[n]gue  & & & \\
+  & 2 & Synkants & & & \\
+  & 3 & Solacz & & & \\
+  & 4 & St[a]ngisnolet \footnote{Reading unclear} & & & \\
+  & 3 & Shrympe & & & \\
+  &   & Sofferancz & & & \\
+T & 2 & Talbott & & & \\
+  & 2 & Tam[r]ett & & & \\
+  & 3 & Th[us] a nysyt & & & \\
+  & 2 & Thus shal at be & & & \\
+V &   & Unafo[rzg]  & & & \\
+  &   & Avaunt da[n]sh & & & \\
 \end{tabular}
 \end{center}
 
@@ -82,6 +140,8 @@ A & 2 & Avent{[}y{]} & 2 & Colert rose & \\
 \newpage 
     \section{Dances}
     \textwidth=3.5in
+    \marginparwidth=2in
+    \oddsidemargin=2in
 
     %\finalVersionString 
     \reversemarginpar
